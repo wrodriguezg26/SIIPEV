@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin t&iacute;tulo</title>
+<style type="text/css">
+
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script language="javascript">
+
+            function doSearch() {
+
+                var tableReg = document.getElementById('regTable');
+
+                var searchText = document.getElementById('searchTerm').value.toLowerCase();
+
+                for (var i = 1; i < tableReg.rows.length; i++) {
+
+                    var cellsOfRow = tableReg.rows[i].getElementsByTagName('td');
+
+                    var found = false;
+
+                    for (var j = 0; j < cellsOfRow.length && !found; j++) {
+
+                        var compareWith = cellsOfRow[j].innerHTML.toLowerCase();
+
+                        if (searchText.length == 0 || (compareWith.indexOf(searchText) > -1)) {
+
+                            found = true;
+
+                        }
+
+                    }
+
+                    if (found) {
+
+                        tableReg.rows[i].style.display = '';
+
+                    } else {
+
+                        tableReg.rows[i].style.display = 'none';
+
+                    }
+
+                }
+
+            }
+
+        </script>
+ <!-- CSS de cada parte del html-->
+.box2{
+       background: #8fcf8;
+    margin: 6px;
+    padding: 2px 13px 1px 11px;
+    text-align: justify;
+    font-family: arial;
+    font-size: 13px;
+    margin: 51% 0px 0px 0px;
+    border: 2px dotted #BDBDBD;
+}
+
+.logo img{
+    margin: 18px;
+    width: 207px;
+    box-shadow: 0px 0px 0px white;
+}
+
+.logo{
+    float: left;
+}
+
+.title {
+    float: left;
+    margin-left: 42%;
+    text-align: right;
+}
+
+
+.clear{
+    clear: both;
+}
+.bot{
+background: url(images/print.png);
+height: 56px;
+width: 55px;
+background-size: 51px;
+background-repeat: no-repeat;
+border: transparent;
+}
+
+.bot:hover{
+background: url(images/print2.png);
+height: 56px;
+width: 55px;
+background-size: 51px;
+background-repeat: no-repeat;
+border: transparent;
+}
+
+</style></head>
+<script src="js/jquery.min.js"></script>
+<script src="js/functions.js"></script>
+<body>
+<div class="content">
+<div class="logo">
+<img style="margin: 18px;"src="images/logos.png" width="90%" height="90%"/>
+</div>
+	<div class="title">  
+		<h2 class="Estilo2">Ubicación locativa SCAAV</h2>
+		<p  class="Estilo1">Secretaría Distrital de Ambiente</p>
+</div
+
+
+<div class="clear"></div>
+
+
+<!-- lista de los grupos que forman el SCAAV-->
+<div>
+<table width="1100" height="750" border="0" align="left">
+  <tr>
+    <td width="200" height="750" align="left">
+  <select name="Seleccione" id="sltAplicaciones">
+	  <option value="0" selected="selected">Grupo del SCAAV</option>
+      <option value="1">Publicidad Exterior Visual</option>
+	  <option value="2">Fuentes Fijas</option>
+      <option value="3">Fuentes Moviles</option>
+      <option value="4">SATAB</option>
+      <option value="5">Plan Decenal</option>
+      <option value="6">Asesores Transversales</option>
+      <option value="7">RMCAB</option>
+      <option value="8">DCA</option>
+      <option value="9">Ruido</option>
+      <option value="10">Red de Ruido</option>
+      </select> 
+</div>
+
+ 
+
+ 
+		<button type="submit">Buscar</button>
+        <input id="searchTerm" type="text" onkeyup="doSearch()" />
+		<div>
+		<p>
+		</p>
+		</td>		
+		</div>
+        <table id="regTable" border="1" cellspacing="0" cellpadding="2" border-color="666633" style="border-collapse" border-spacing="5px" width="686px;"color="#fff"; >
+
+            <tr color="666633"><td>Id</td><td>Nombre del Funcionario</td></tr>
+            <tr><td>1</td><td>DAVID MOYANO FONSECA</td></tr>
+			<tr><td>1</td><td>DAVID MOYANO FONSECA</td></tr>
+			<tr><td>1</td><td>DAVID MOYANO FONSECA</td></tr>
+			<tr><td>1</td><td>DAVID MOYANO FONSECA</td></tr>
+			
+            </table>
+
+<!-- Campo de busqueda de funcionario-->
+
+  <table width="1100" height="750" border="0" align="center">
+  <tr>
+    <td width="200" height="750" align="center">
+	
+
+<!-- Campo de busqueda de funcionario--> 
+<div class="box2">
+	  <p>Si desea imprimir el grupo donde se encuentran los funcionarios, haga click en el siguiente botón.</p>
+</div>
+
+<!-- Función de Imprimir --> 
+<button class="bot" onclick="myFunction()"></button>
+<script>
+function myFunction() {
+window.print();
+}
+</script>
+
+
+<!-- Imagenes de planos del SCAAV--> 
+</body>
+</html>
+    <td width="750">
+   	    <div id="divImagen0"><img src="images/imagenCompleta1.png" width="100%" height="100%"/></div>
+        <div id="divImagen1"><img src="images/TopologiaGeneral.png" width="100%" height="100%"/></div>
+		<div id="divImagen2"><img src="images/argis.png" width="100%" height="100%"/></div>
+		<div id="divImagen3"><img src="images/comparendo.png" width="100%" height="100%"/></div>
+        <div id="divImagen4"><img src="images/correo.png" width="100%" height="100%"/></div>
+        <div id="divImagen5"><img src="images/glpi.png" width="100%" height="100%"/></div>
+        <div id="divImagen6"><img src="images/intranet.png" width="100%" height="100%"/></div>
+        <div id="divImagen7"><img src="images/jacd.png" width="100%" height="100%"/></div>
+        <div id="divImagen8"><img src="images/mercurio.png" width="100%" height="100%"/></div>
+        <div id="divImagen9"><img src="images/orfeo.png" width="100%" height="100%"/></div>
+        <div id="divImagen10"><img src="images/pag_web_gobierno.png" width="100%" height="100%"/></div>
+        <div id="divImagen11"><img src="images/pag_web_localidades.png" width="100%" height="100%"/></div>
+        <div id="divImagen12"><img src="images/scg.png" width="100%" height="100%"/></div>
+        <div id="divImagen13"><img src="images/nomina.png" width="100%" height="100%"/></div>
+        <div id="divImagen14"><img src="images/siactua.png" width="100%" height="100%"/></div>
+        <div id="divImagen15"><img src="images/siactua_ciudadania.png" width="100%" height="100%"/></div>
+        <div id="divImagen16"><img src="images/siactua_inspecciones.png" width="100%" height="100%"/></div>
+        <div id="divImagen17"><img src="images/siap.png" width="100%" height="100%"/></div>
+        <div id="divImagen18"><img src="images/sicapital.png" width="100%" height="100%"/></div>
+        <div id="divImagen19"><img src="images/side.png" width="100%" height="100%"/></div>
+        <div id="divImagen20"><img src="images/sidicco.png" width="100%" height="100%"/></div>
+        <div id="divImagen21"><img src="images/sig.png" width="100%" height="100%"/></div>
+        <div id="divImagen22"><img src="images/sigob.png" width="100%" height="100%"/></div>
+        <div id="divImagen23"><img src="images/sijc.png" width="100%" height="100%"/></div>
+        <div id="divImagen24"><img src="images/sipse_v1.png" width="100%" height="100%"/></div>
+        <div id="divImagen25"><img src="images/sipse_v2.png" width="100%" height="100%"/></div>
+        <div id="divImagen26"><img src="images/sisipec.png" width="100%" height="100%"/></div>
+        <div id="divImagen27"><img src="images/sisipec_f2.png" width="100%" height="100%"/></div>
+        <div id="divImagen28"><img src="images/siup.png" width="100%" height="100%"/></div>
+        <div id="divImagen29"><img src="images/tinguas.png" width="100%" height="100%"/></div>  </td>
+        
+		
+ 
+ </tr>
+</table>
+</div>
+</body>
+</html>
