@@ -1,0 +1,106 @@
+<html>
+
+    <head>
+
+        <title>Table search: HTML - JavaScript</title>
+
+    </head>
+
+    <body>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script language="javascript">
+
+            function doSearch() {
+
+                var tableReg = document.getElementById('regTable');
+
+                var searchText = document.getElementById('searchTerm').value.toLowerCase();
+
+                for (var i = 1; i < tableReg.rows.length; i++) {
+
+                    var cellsOfRow = tableReg.rows[i].getElementsByTagName('td');
+
+                    var found = false;
+
+                    for (var j = 0; j < cellsOfRow.length && !found; j++) {
+
+                        var compareWith = cellsOfRow[j].innerHTML.toLowerCase();
+
+                        if (searchText.length == 0 || (compareWith.indexOf(searchText) > -1)) {
+
+                            found = true;
+
+                        }
+
+                    }
+
+                    if (found) {
+
+                        tableReg.rows[i].style.display = '';
+
+                    } else {
+
+                        tableReg.rows[i].style.display = 'none';
+
+                    }
+
+                }
+
+            }
+
+        </script>
+
+ 
+		<button type="submit">Buscar</button>
+        <input id="searchTerm" type="text" onkeyup="doSearch()" />
+		<div>
+		<p>
+		</p>
+		</td>		
+		</div>
+        <table id="regTable" border="1" cellspacing="0" cellpadding="2" border-color="666633" style="border-collapse" border-spacing="5px" width="686px;"color="#fff"; >
+
+            <tr color="666633"><td>Id</td><td>Codigo</td><td>Descrpción</td><td>Elemento</td><td>Diseño(s)</td></tr>
+            <tr><td>1</td><td>M-10</td><td>Paradero</td><td><img src="https://photos-3.dropbox.com/t/2/AAA2sEK6jI0deO-m8eQZU2XHscR5JvBn90rfvduBQ0V_rw/12/125358235/png/32x32/1/_/1/2/M-10.PNG/EP6axWAYNCACKAI/752WRCB9Cm-MD5Fz2sT2Fw2Hk0A083inK4mhtOajMWI?size=1280x960&size_mode=3"><td><a href="https://www.dropbox.com/scl/fi/neet3p1h5wrwc62yo6u68/Dise%C3%B1o%20de%20Elementos%20M-10.pdf?dl=0&oref=e&r=AAiEk64I_Cb6yThRb_xJGR18mHsOU6XOFr5QHBHuojbxKQCwpqY9TDN3hFRyOOVYu1L0UvJtcoDYQn3-gtN4ATmXnx_e7sYqWhU3ti8vP7dHh63nVeQqiJca9X99L0B-MPGVOtVvgG6wVX9ePLI0Ssua4ueOUUffTZn74K4gpVqv6dGwIjAbwEbois6ROraXOn_mu2INePBIYIZ4faMz007eUMMMuevfbp4IsYwlLEt3Yw&sm=1">Ver</a></td></td></tr>
+            <tr><td>2</td><td>M-20</td><td>Telefono Publico de Pedestal</td><td><img src="https://photos-1.dropbox.com/t/2/AAAigp6eHzako93ITxBwd0RlTw6RNvatJBvJcOhfMdM2iA/12/125358235/png/32x32/1/_/1/2/M-20.PNG/EP6axWAYOCACKAI/bbaOkpMrckA_jY9dlh1kKz6nvzoKrl3Ltp-yO9RnMvY?size=1280x960&size_mode=3"></td><td></td></tr>
+            <tr><td>3</td><td>M-21</td><td>Telefono Publico de Pared</td><td></td><td></td></tr>
+            <tr><td>4</td><td>M-30</td><td>Banca en Concreto</td><td></td><td></td></tr>
+			<tr><td>5</td><td>M-31</td><td>Banca en Concreto sin espaldar</td><td></td><td></td></tr>
+			<tr><td>6</td><td>M-40</td><td>Banca en Concreto Modular</td><td></td><td></td></tr>
+			<tr><td>7</td><td>M-41</td><td>Banca-bolardo en concreto</td><td></td><td></td></tr>
+			<tr><td>8</td><td>M-50</td><td>Banca en Madera</td><td></td><td></td></tr>	
+			<tr><td>9</td><td>M-60</td><td>Bolardo en concreto</td><td></td><td></td></tr>
+			<tr><td>10</td><td>M-61</td><td>Bolardo bajo en concreto</td><td></td><td></td></tr>
+			<tr><td>11</td><td>M-62</td><td>Bolardo Bajo</td><td></td><td></td></tr>
+			<tr><td>12</td><td>M-63</td><td>Bolardo Alto</td><td></td><td></td></tr>
+			<tr><td>13</td><td>M-70</td><td>Reja de proteccion parques vecinales y de bolsillo</td><td></td><td></td></tr>
+			<tr><td>14</td><td>M-71</td><td>Malla de cerramiento parques zonales y metropolitanos</td><td></td><td></td></tr>
+			<tr><td>15</td><td>M-72</td><td>Cerramiento tipo CED</td><td></td><td></td></tr>
+			<tr><td>16</td><td>M-80</td><td>Baranda</td><td></td><td></td></tr>
+			<tr><td>17</td><td>M-81</td><td>Baranda de dos tubos</td><td></td><td></td></tr>
+			<tr><td>18</td><td>M-82</td><td>Baranda de tres tubos -movilidad reducida</td><td></td><td></td></tr>
+			<tr><td>19</td><td>M-90</td><td>Protector de Arbol</td><td></td><td></td></tr>
+			<tr><td>20</td><td>M-91</td><td>Protector de Arbol de dos tubos</td><td></td><td></td></tr>
+			<tr><td>21</td><td>M-100</td><td>Ciclo parquedero tipo 1</td><td></td><td></td></tr>
+			<tr><td>22</td><td>M-101</td><td>Ciclo parquedero tipo 2</td><td></td><td></td></tr>
+			<tr><td>23</td><td>M-110</td><td>Bebedero</td><td></td><td></td></tr>
+			<tr><td>24</td><td>M-120</td><td>Caneca</td><td></td><td></td></tr>
+			<tr><td>25</td><td>M-121</td><td>Caneca en acero inoxidable</td><td></td><td></td></tr>
+			<tr><td>26</td><td>M-130</td><td>Luminaria adosada a fachada</td><td></td><td></td></tr>
+			<tr><td>27</td><td>M-131</td><td>Poste de Alumbrado Publico - Luminaria historica</td><td></td><td></td></tr>
+			<tr><td>28</td><td>M-140</td><td>Carro de ventas parque metropolinatano</td><td></td><td></td></tr>
+			<tr><td>29</td><td>M-141</td><td>Modulo de servicio al ciudadano -REDEP</td><td></td><td></td></tr>
+			<tr><td>30</td><td>M-142</td><td>Modulo de ciclo-estacion</td><td></td><td></td></tr>
+			<tr><td>31</td><td>M-143</td><td>Modulo de servicio sanitario</td><td></td><td></td></tr>
+			<tr><td>32</td><td>M-144</td><td>Modulo de Cafe</td><td></td><td></td></tr>
+			<tr><td>33</td><td>M-145</td><td>Modulo de Informacion</td><td></td><td></td></tr>
+			<tr><td>34</td><td>M-146</td><td>Modulo de ventas</td><td></td><td></td></tr>
+			<tr><td>35</td><td>M-147</td><td>Modulo de ventas (KIOSKO)-ZAR</td><td></td><td></td></tr>
+			<tr><td>36</td><td>M-148</td><td>Modulo de ventas populares -ZTAA</td><td></td><td></td></tr>
+			<tr><td>37</td><td>M-150</td><td>Pendones adosados a poste</td><td></td><td></td></tr>
+			<tr><td>38</td><td>M-160</td><td>Panel Publicitario</td><td></td><td></td></tr>
+        </table>
+
+    </body>
+
+</html>
