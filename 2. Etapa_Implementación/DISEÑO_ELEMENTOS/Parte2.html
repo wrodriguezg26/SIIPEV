@@ -1,0 +1,137 @@
+<html>
+
+    <head>
+<title>Tabla de otros elementos</title>
+	</head>
+
+    <body style="color:#009fe3">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+		<script language="javascript">
+
+            function doSearch() {
+                var tableReg = document.getElementById('regTable');
+                var searchText = document.getElementById('searchTerm').value.toLowerCase();
+                for (var i = 1; i < tableReg.rows.length; i++) {
+                    var cellsOfRow = tableReg.rows[i].getElementsByTagName('td');
+                    var found = false;
+                    for (var j = 0; j < cellsOfRow.length && !found; j++) {
+                        var compareWith = cellsOfRow[j].innerHTML.toLowerCase();
+                        if (searchText.length == 0 || (compareWith.indexOf(searchText) > -1)) {
+                            found = true;
+                        }
+                    }
+                    if (found) {
+                        tableReg.rows[i].style.display = '';
+                    } else {
+                        tableReg.rows[i].style.display = 'none';
+                    }
+                }
+            }
+        </script>
+
+ 
+		<button  style="color: #ffffff; background-color: #009fe3" type="submit">Consultar</button>
+        <input id="searchTerm" type="text" onkeyup="doSearch()" />
+			<p>Consulte los diseños de los elementos de mobiliario urbano</p>
+				<div>
+					<table  id="regtable" bgcolor="#009fe3" style="color:#ffffff" border="2" cellspacing="0" cellpadding="2" border-color="#009fe3" style="border-collapse" border-spacing="5px" width="686px;"color="#009fe3";>
+						<tr> <td><center>Parte A</center></td> </tr></table>
+			
+				</div>
+		
+					<table style="text-align:center" id="regTable" border="1" cellspacing="0" cellpadding="2" border-color="666633" style="border-collapse" border-spacing="5px" width="686px;"color="#fff"; >   
+						<tr  bgcolor="#009fe3" style="color:#ffffff" color="666633"><td>Id</td><td>Codigo</td><td>Nombre_Elemento</td><td>Elemento</td><td>Diseño(s)</td></tr>
+						
+							 <tr><td>1</td><td>M-20</td><td>Telefono Publico de Pedestal</td><td><center><img src="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\Infografía\Parte2\M-20.png"></center></td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE A\Diseño de Elementos M-20">Ver</a></td></td></tr>
+							 <tr><td>2</td><td>M-21</td><td>Telefono Publico de Pared</td><td><center><img src="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\Infografía\Parte2\M-21.png"></center></td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE A\">Ver</a></td></td></tr>
+							 <tr><td>3</td><td>M-30</td><td>Banca en Concreto</td><td><center><img src="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\Infografía\Parte2\M-30.png"></center></td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE A\">Ver</a></td></td></tr>
+							 <tr><td>4</td><td>M-31</td><td>Banca en Concreto sin espaldar</td><td><center><img src="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\Infografía\Parte2\M-31.png"></center></td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE A\">Ver</a></td></td></tr>
+							 <tr><td>5</td><td>M-40</td><td>Banca en Concreto Modular</td><td><center><img src="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\Infografía\Parte2\M-40.png"></center></td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE A\">Ver</a></td></td></tr>
+							 <tr><td>6</td><td>M-41</td><td>Banca-bolardo en concreto</td><td><center><img src="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\Infografía\Parte2\M-41.png"></center></td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE A\">Ver</a></td></td></tr>
+							 <tr><td>7</td><td>M-50</td><td>Banca en Madera</td><td><center><img src="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\Infografía\Parte2\M-50.png"></center></td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE A\">Ver</a></td></td></tr>	
+							 <tr><td>8</td><td>M-60</td><td>Bolardo en concreto</td><td><center><img src="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\Infografía\Parte2\M-60.png"></center></td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE A\">Ver</a></td></td></tr>
+			                 <tr><td>9</td><td>M-61</td><td>Bolardo bajo en concreto</td><td><center><img src="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\Infografía\Parte2\M-61.png"></center></td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE A\">Ver</a></td></td></tr>				 
+							 <tr><td>10</td><td>M-62</td><td>Bolardo Bajo</td><td><center><img src="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\Infografía\Parte2\M-62.png"></center></td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE A\">Ver</a></td></td></tr>
+			                 <tr><td>11</td><td>M-63</td><td>Bolardo Alto</td><td><center><img src="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\Infografía\Parte2\M-63.png"></center></td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE A\">Ver</a></td></td></tr>
+							 <tr><td>12</td><td>M-70</td><td>Reja de proteccion parques vecinales y de bolsillo</td><td><center><img src="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\Infografía\Parte2\M-70.png"></center></td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE A\">Ver</a></td></td></tr>
+			                 <tr><td>13</td><td>M-71</td><td>Malla de cerramiento parques zonales y metropolitanos</td><td><center><img src="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\Infografía\Parte2\M-71.png"></center></td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE A\">Ver</a></td></td></tr>
+							 <tr><td>14</td><td>M-72</td><td>Cerramiento tipo CED</td><td><center><img src="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\Infografía\Parte2\M-72.png"></center></td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE A\">Ver</a></td></td></tr>
+			                 <tr><td>15</td><td>M-80</td><td>Baranda</td><td><center><img src="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\Infografía\Parte2\M-80.png"></center></td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE A\">Ver</a></td></td></tr>
+							 <tr><td>16</td><td>M-81</td><td>Baranda de dos tubos</td><td><center><img src="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\Infografía\Parte2\M-81.png"></center></td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE A\">Ver</a></td></td></tr>
+			                 <tr><td>17</td><td>M-82</td><td>Baranda de tres tubos -movilidad reducida</td><td><center><img src="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\Infografía\Parte2\M-82.png"></center></td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE A\">Ver</a></td></td></tr>
+			                 <tr><td>18</td><td>M-90</td><td>Protector de Arbol</td><td><center><img src="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\Infografía\Parte2\M-90.png"></center></td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE A\">Ver</a></td></td></tr>
+			                 <tr><td>19</td><td>M-91</td><td>Protector de Arbol de dos tubos</td><td><center><img src="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\Infografía\Parte2\M-91.png"></center></td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE A\">Ver</a></td></td></tr>
+			                 <tr><td>20</td><td>M-100</td><td>Ciclo parquedero tipo 1</td><td><center><img src="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\Infografía\Parte2\M-100.png"></center></td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE A\">Ver</a></td></td></tr>
+			                 <tr><td>21</td><td>M-101</td><td>Ciclo parquedero tipo 2</td><td><center><img src="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\Infografía\Parte2\M-101.png"></center></td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE A\">Ver</a></td></td></tr>
+			                 <tr><td>22</td><td>M-110</td><td>Bebedero</td><td><center><img src="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\Infografía\Parte2\M-110.png"></center></td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE A\">Ver</a></td></td></tr>
+			                 <tr><td>23</td><td>M-120</td><td>Caneca</td><td><center><img src="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\Infografía\Parte2\M-120.png"></center></td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE A\">Ver</a></td></td></tr>
+			                 <tr><td>24</td><td>M-121</td><td>Caneca en acero inoxidable</td><td><center><img src="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\Infografía\Parte2\M-121.png"></center></td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE A\">Ver</a></td></td></tr>
+			                 <tr><td>25</td><td>M-130</td><td>Luminaria adosada a fachada</td><td><center><img src="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\Infografía\Parte2\M-130.png"></center></td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE A\">Ver</a></td></td></tr>
+			                 <tr><td>26</td><td>M-131</td><td>Poste de Alumbrado Publico - Luminaria historica</td><td><center><img src="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\Infografía\Parte2\M-131.png"></center></td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE A\">Ver</a></td></td></tr>
+			                 <tr><td>27</td><td>M-140</td><td>Carro de ventas parque metropolinatano</td><td><center><img src="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\Infografía\Parte2\M-140.png"></center></td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE A\">Ver</a></td></td></tr>
+			                 <tr><td>28</td><td>M-141</td><td>Modulo de servicio al ciudadano -REDEP</td><td><center><img src="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\Infografía\Parte2\M-141.png"></center></td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE A\">Ver</a></td></td></tr>
+			                 <tr><td>29</td><td>M-142</td><td>Modulo de ciclo-estacion</td><td><center><img src="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\Infografía\Parte2\M-142.png"></center></td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE A\">Ver</a></td></td></tr>
+			                 <tr><td>30</td><td>M-143</td><td>Modulo de servicio sanitario</td><td><center><img src="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\Infografía\Parte2\M-143.png"></center></td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE A\">Ver</a></td></td></tr>
+			                 <tr><td>31</td><td>M-144</td><td>Modulo de Cafe</td><td><center><img src="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\Infografía\Parte2\M-144.png"></center></td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE A\">Ver</a></td></td></tr>
+			                 <tr><td>32</td><td>M-145</td><td>Modulo de Informacion</td><td><center><img src="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\Infografía\Parte2\M-145.png"></center></td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE A\">Ver</a></td></td></tr>
+			                 <tr><td>33</td><td>M-146</td><td>Modulo de ventas</td><td><center><img src="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\Infografía\Parte2\M-146.png"></center></td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE A\">Ver</a></td></td></tr>
+			                 <tr><td>34</td><td>M-147</td><td>Modulo de ventas (KIOSKO)-ZAR</td><td><center><img src="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\Infografía\Parte2\M-147.png"></center></td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE A\">Ver</a></td></td></tr>
+			                 <tr><td>35</td><td>M-148</td><td>Modulo de ventas populares -ZTAA</td><td><center><img src="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\Infografía\Parte2\M-148.png"></center></td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE A\">Ver</a></td></td></tr>
+			                 <tr><td>36</td><td>M-150</td><td>Pendones adosados a poste</td><td><center><img src="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\Infografía\Parte2\M-150.png"></center></td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE A\">Ver</a></td></td></tr>							
+					
+						
+						
+						<tr><td aling="center" colspan="5"border="2"bgcolor="#009fe3" style="color:#ffffff" ><center>Parte B</center></td></tr>
+						<tr bgcolor="#009fe3" style="color:#ffffff" color="666633"><td>Id</td><td>Codigo</td><td>Nombre_Elemento</td><td>Descripción</td><td>Diseño(s)</td></tr>
+						
+						
+						<tr><td>1</td><td>M-20</td><td>Telefono Publico de Pedestal</td><td>Recomendaciones de Ubicación</td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE B\">Ver</a></td></td></tr>
+						<tr><td>2</td><td>M-21</td><td>Telefono Publico de Pared</td><td>Recomendaciones de Ubicación</td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE B\">Ver</a></td></td></tr>
+						<tr><td>3</td><td>M-30</td><td>Banca en Concreto</td><td>Recomendaciones de Ubicación</td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE B\">Ver</a></td></td></tr>
+						<tr><td>4</td><td>M-31</td><td>Banca en Concreto sin espaldar</td><td>Recomendaciones de Ubicación</td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE B\">Ver</a></td></td></tr>
+						<tr><td>5</td><td>M-40</td><td>Banca en Concreto Modular</td><td>Recomendaciones de Ubicación</td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE B\">Ver</a></td></td></tr>
+						<tr><td>6</td><td>M-41</td><td>Banca-bolardo en concreto</td><td>Recomendaciones de Ubicación</td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE B\">Ver</a></td></td></tr>
+						<tr><td>7</td><td>M-50</td><td>Banca en Madera</td><td>Recomendaciones de Ubicación</td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE B\">Ver</a></td></td></tr>
+						<tr><td>8</td><td>M-60 a M-63</td><td>Bolardo</td><td>Recomendaciones de Ubicación</td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE B\">Ver</a></td></td></tr>
+						<tr><td>9</td><td>M-70</td><td>Reja de protección parques vecinales y de bolsillo</td><td>Recomendaciones de Ubicación</td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE B\">Ver</a></td></td></tr>
+						<tr><td>10</td><td>M-71</td><td>Malla de cerramiento parques zonales y metropolitanos</td><td>Recomendaciones de Ubicación</td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE B\">Ver</a></td></td></tr>
+						<tr><td>11</td><td>M-72</td><td>Cerramiento tipo CED</td><td>Recomendaciones de Ubicación</td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE B\">Ver</a></td></td></tr>
+						<tr><td>12</td><td>M-80</td><td>Baranda</td><td>Recomendaciones de Ubicación</td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE B\">Ver</a></td></td></tr>
+						<tr><td>13</td><td>M-81</td><td>Baranda de dos tubos</td><td>Recomendaciones de Ubicación</td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE B\">Ver</a></td></td></tr>
+						<tr><td>14</td><td>M-82</td><td>Baranda de tres tubos -movilidad reducida</td><td>Recomendaciones de Ubicación</td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE B\">Ver</a></td></td></tr>
+						<tr><td>15</td><td>M-90</td><td>Protector de Arból</td><td>Recomendaciones de Ubicación</td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE B\">Ver</a></td></td></tr>
+						<tr><td>16</td><td>M-91</td><td>Protector de Arból de dos tubos</td><td>Recomendaciones de Ubicación</td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE B\">Ver</a></td></td></tr>
+						<tr><td>17</td><td>M-100 a M-101</td><td>Cicloparqueaderos</td><td>Recomendaciones de Ubicación</td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE B\">Ver</a></td></td></tr>
+						<tr><td>18</td><td>M-110</td><td>Bebedero</td><td>Recomendaciones de Ubicación</td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE B\">Ver</a></td></td></tr>
+						<tr><td>19</td><td>M-120 a M-121</td><td>Canecas</td><td>Recomendaciones de Ubicación</td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE B\">Ver</a></td></td></tr>
+						<tr><td>20</td><td>M-130</td><td>Postes de alumbrado público</td><td>Recomendaciones de Ubicación</td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE B\">Ver</a></td></td></tr>
+						<tr><td>21</td><td>M-131</td><td>Poste de Alumbrado Público - Lúminaria histórica</td><td>Recomendaciones de Ubicación</td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE B\">Ver</a></td></td></tr>
+						<tr><td>22</td><td>M-140</td><td>Carro de ventas parque metropolinatano </td><td>Recomendaciones de Ubicación</td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE B\">Ver</a></td></td></tr>
+						<tr><td>23</td><td>M-141</td><td>Módulo de servicio al ciudadano -REDEP</td><td>Recomendaciones de Ubicación</td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE B\">Ver</a></td></td></tr>
+						<tr><td>24</td><td>M-142 a M-146</td><td>Módulo de puntos de encuentro</td><td>Recomendaciones de Ubicación</td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE B\">Ver</a></td></td></tr>
+						<tr><td>25</td><td>M-147</td><td>Módulo de ventas (KIOSKO)-ZAR</td><td>Recomendaciones de Ubicación</td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE B\">Ver</a></td></td></tr>
+						<tr><td>26</td><td>M-148</td><td>Módulo de ventas populares -ZTAA</td><td>Recomendaciones de Ubicación</td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE B\">Ver</a></td></td></tr>
+						<tr><td>27</td><td>M-150</td><td>Pendones adosados a poste</td><td>Recomendaciones de Ubicación</td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE B\">Ver</a></td></td></tr>
+						
+						
+						<tr><td aling="center" colspan="5"border="2"bgcolor="#009fe3" style="color:#ffffff" ><center>Parte C</center></td></tr>
+						<tr bgcolor="#009fe3" style="color:#ffffff" color="666633"><td>Id</td><td>Codigo</td><td>Nombre_Elemento</td><td>Descripción</td><td>Diseño(s)</td></tr>
+						
+						
+						<tr><td>1</td><td>M-EA10</td><td>Alameda-tramo típico</td><td>Recomendaciones de Ubicación</td></td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE C\">Ver</a></td></td></tr>
+						<tr><td>2</td><td>M-EA20</td><td>Alameda Esquina</td><td>Recomendaciones de Ubicación</td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE C\">Ver</a></td></td></tr>
+						<tr><td>3</td><td>M-EA30</td><td>Calle Peatonal</td><td>Recomendaciones de Ubicación</td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE C\">Ver</a></td></td></tr>
+						<tr><td>4</td><td>M-EA40</td><td>Cruce</td><td>Recomendaciones de Ubicación</td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE C\">Ver</a></td></td></tr>
+						<tr><td>5</td><td>M-EA50</td><td>Plazoleta</td><td>Recomendaciones de Ubicación</td><td><a href="ftp://190.27.245.106/\DISEÑO_ELEMENTOS\PARTE C\">Ver</a></td></td></tr>
+					</table>
+			
+			
+		
+			
+	
+			
+
+    </body>
+
+</html>

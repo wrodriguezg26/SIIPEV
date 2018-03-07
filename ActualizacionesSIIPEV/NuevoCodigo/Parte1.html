@@ -1,0 +1,59 @@
+﻿<html>
+<!-- Autor: Ing. Wilman Rodriguez -->
+    <head>
+<title>Tabla de Elementos de mobiliario urbano</title>
+	</head>
+
+    <body style="color:#009fe3">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+		<script language="javascript">
+
+            function doSearch() {
+                var tableReg = document.getElementById('regTable');
+                var searchText = document.getElementById('searchTerm').value.toLowerCase();
+                for (var i = 1; i < tableReg.rows.length; i++) {
+                    var cellsOfRow = tableReg.rows[i].getElementsByTagName('td');
+                    var found = false;
+                    for (var j = 0; j < cellsOfRow.length && !found; j++) {
+                        var compareWith = cellsOfRow[j].innerHTML.toLowerCase();
+                        if (searchText.length == 0 || (compareWith.indexOf(searchText) > -1)) {
+                            found = true;
+                        }
+                    }
+                    if (found) {
+                        tableReg.rows[i].style.display = '';
+                    } else {
+                        tableReg.rows[i].style.display = 'none';
+                    }
+                }
+            }
+        </script>
+
+
+		<button  style="color: #ffffff; background-color: #009fe3" type="submit">Consultar</button>
+        <input id="searchTerm" type="text" onkeyup="doSearch()" />
+			<p>Consulte los diseños de los elementos de mobiliario urbano</p>
+				<div>
+
+					<table  id="regtable" bgcolor="#009fe3" style="color:#ffffff" border="2" cellspacing="0" cellpadding="2" border-color="#009fe3" style="border-collapse" border-spacing="5px" width="686px;"color="#009fe3";>
+						<tr> <td><center>Parte A</center></td> </tr></table>
+			
+				</div>
+
+						<table style="text-align:center" id="regTable" border="1" cellspacing="0" cellpadding="2" border-color="666633" style="border-collapse" border-spacing="5px" width="686px;"color="#fff"; >   
+						<tr  bgcolor="#009fe3" style="color:#ffffff" color="666633"><td>Id</td><td>Codigo</td><td>Nombre_Elemento</td><td>Elemento</td><td>Diseño(s)</td></tr>
+						<tr><td>1</td><td>M-10</td><td>Paradero</td><td><center><img src="Diseno%20pertenecientes%20al%20mobiliario%20urbano%20M10-M160/Infografia/Parte1/M-10.png" width="100" height="100"></center><td><a href="Diseno%20pertenecientes%20al%20mobiliario%20urbano%20M10-M160/PARTE%20A/Diseño%20de%20Elementos%20M-10.pdf">Ver</a></td></td></tr>
+						<tr><td>2</td><td>M-160</td><td>Panel Publicitario</td><td><center><img src="Diseno%20pertenecientes%20al%20mobiliario%20urbano%20M10-M160/Infografia/Parte1/M-160.png" width="100" height="100;"></center></td><td><a href="Diseno%20pertenecientes%20al%20mobiliario%20urbano%20M10-M160/PARTE%20A/Diseño%20de%20Elementos%20M-160.pdf">Ver</td></tr>
+					    <tr><td aling="center" colspan="5"border="2"bgcolor="#009fe3" style="color:#ffffff" ><center>Parte B</center></td></tr>
+						<tr bgcolor="#009fe3" style="color:#ffffff" color="666633"><td>Id</td><td>Codigo</td><td>Nombre_Elemento</td><td>Descripción</td><td>Diseño(s)</td></tr>
+						<tr><td>1</td><td>M-10</td><td>Paradero</td><td>Recomendaciones de Ubicación</td><td><a href="Otros%20Elementos/PARTE%20B/Diseño%20de%20Elementos%20M10.pdf">Ver</td></td></tr>
+						<tr><td>2</td><td>M-160</td><td>Panel Publicitario</td><td>Recomendaciones de Ubicación<td><a href="Otros%20Elementos/PARTE%20B/Diseño%20de%20Elementos%20M-160.pdf">Ver</td></tr>
+					</table>
+			
+	
+			
+
+    </body>
+
+</html>

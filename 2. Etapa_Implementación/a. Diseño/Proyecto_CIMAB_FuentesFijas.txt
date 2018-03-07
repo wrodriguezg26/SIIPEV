@@ -1,0 +1,9 @@
+1. Adicionar un Campo de Frecuencia por  programación. ????
+
+
+2. Se debe adicionar el campo requiere_permiso en la entidad Fuentes_Fijas
+
+3. Adicionar el campo Tipo_Acto en  la tabla LICPER
+
+4. Se debe modificar el nombre del campo  NO_LICPER por NO_ACTO
+
