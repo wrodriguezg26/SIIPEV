@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('assets/siipev_icon.ico') }}" />
+        <link rel="stylesheet" href="{{asset('css/styles_main.css')}}">
+           <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    </head>
+    <body>
+
+ <div class="container" >
+ <div class="row">
+  <div style="width: 291px" >
+     <div class="p-4 pl-5"><span class="header_subtitle p-3">Servicios en Linea</span></div>
+     
+          {% block sidebar %}
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">              
+
+                <ul class="list-unstyled components">
+                   <li >
+                     <a   href="{{ path('siipev')}}">
+                        <img src="/assets/19.png"  alt="" width="50px" height="50px">
+                      Proyecto PEV 
+                      </a>
+                    </li>
+                    <li >
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
+                              <img src="/assets/10.png"  alt="">
+                        Documentos de estudio</a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                            <li><a  href="{{ path('docestudio')}}">Manual PEV</a></li>
+                            <li><a  href="{{ path('docestudio_tec')}}">Documentos estudios tecnicos</a></li>
+                         
+                        </ul>
+                    </li>
+                    <li >
+                     <a  href="{{ path('t_linea')}}">
+                        <img src="/assets/tramites_linea.png"  alt="">
+                    Tramites en linea
+                      </a>
+                    </li>
+                    <li >
+                     <a  href="http://guiatramitesyservicios.bogota.gov.co/tramite_entidad/registro-de-publicidad-exterior-visual/" target="_blank"s>
+                          <img src="/assets/formatos_registros.png"  alt="">
+                   Formatos para registros
+                      </a>
+                    </li>
+                     <li >
+                     <a  href="#">
+                        <img src="/assets/17.png"  alt="">
+                  Usuarios nuevos
+                      </a>
+                    </li>
+                     <li >
+                     <a  href="#">
+                        <img src="/assets/16.png"  alt="">
+                  Usuarios registrados
+                      </a>
+                    </li>
+                     <li >
+                     <a  href="{{ path('construccion')}}">
+                     <img src="/assets/18.png"  alt="">
+                  Normatividad
+                      </a>
+                    </li>
+                       <li >
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">
+                         <img src="/assets/15.png"  alt="">
+                        ¿ Que es SIIPEV</a>
+                       <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li><a  href="{{ path('w_siipev')}}">¿ Que es SIIPEV?</a></li>
+                            <li><a  href="{{ path('construccion')}}">Nuestros Modulos</a></li>
+                             <li><a  href="{{ path('construccion')}}">Normatividad</a></li>
+                         
+                        </ul>
+                    </li>
+
+                    <li >
+                     <a  href="{{ path('v_geo')}}">
+                       <img src="/assets/14.png"  alt="">
+                  Visor geografico
+                      </a>
+                    </li>
+
+
+                </ul>
+
+                
+            </nav>
+              {% endblock %}
+    </div>
+      <div class="col mt-4">
+     <div id="content">
+      {% block body %}
+            
+     {% endblock %}
+    </div>
+
+
+  </div>
+ </div>
+</div>
+    
+    
+        {% block javascripts %}
+
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+     
+    
+        {% endblock %}
+    </body>
+    <footer id="info">
+            <div class="footer_css">
+                <div class="row">
+                    <div class="col-xs-6 col-sm-4">
+                         <div class="panel-body">
+                            <h4>Información General</h4>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-globe"></i> COMO LLEGAR </a></li>
+                                <li><a href="#"><i class="fa fa-map-marker"></i> PUNTOS DE ATENCION</a></li>
+                                <li><a href="#"><i class="glyphicon glyphicon-align-justify"></i> PRENSA</a></li>
+                                <li><a href="#"><i class="fa fa-rss"></i> RSS</a></li>
+                                <li class="gobLinea_css"><a href="#"><img src="http://cimab.ambientebogota.gov.co/static/base/images/pages/footer/gobLinea.png" width="80"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <div class="panel-body">
+                        <h4>Entidades Sector Ambiente</h4>
+                            <ul>
+                                <li><a href="#">Jardin Botanico</a></li>
+                                <li><a href="#">Acueducto de Bogotá</a></li>
+                                <li><a href="#">Secretaria de Salud</a></li>
+                                <li><a href="#">Secretaria de Movilidad</a></li>
+                            </ul>
+                            <ul class="list-unstyled">
+                                <li>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 imageSize_css">
+                        <div class="panel-body">
+                            <img src="http://cimab.ambientebogota.gov.co/static/base/images/pages/footer/ico.png">
+                            <img src="http://cimab.ambientebogota.gov.co/static/base/images/pages/footer/iq.png">
+                            <img src="http://cimab.ambientebogota.gov.co/static/base/images/pages/footer/fp.png">
+                        </div>
+                    </div>
+                    <div class="clearfix visible-xs"></div>
+                </div>
+                <div class="footerMedium_css">
+                    <div class="col-xs-6 col-sm-6">
+                        <div class="panel-body">
+                            <dl>
+                                <dt>Sede Administrativa:</dt>
+                                <dd><small>Avenida Caracas No 54 -38 - Código Postal: 110231324</small></dd>
+                                <dt></dt>
+                                <dd><small></small></dd>
+                            </dl>
+                            <dl class="dl-horizontal">
+                                <dt>Conmutador: </dt>
+                                <dd>(571) +57 (1) 377 8899</dd>
+                                <dt>Horario de atención: </dt>
+                                <dd>lunes a viernes 8:00 am a 5:00 pm</dd>
+                                <dt>Correo electrónico:</dt>
+                                <dd>cimab@ambientebogota.gov.co</dd>
+                                <dt>Nit:</dt>
+                                <dd>899.999.061-9</dd>
+                            </dl>                                 
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 logoAlcaldia_css ">
+                        <img  src="http://cimab.ambientebogota.gov.co/static/base/images/pages/footer/logoAlcaldia.png" >
+                    </div>    
+                </div>  
+                 
+                <div class="row center">
+                    <p>Todos los derechos reservados para la Secretaría de Ambiente Distrital. </p>
+                    <br>
+                    <h6>Prohibida su reproducción total o parcial, asi como cualquier traducción a cualquier idioma, sin autorización de su titular.</h6>
+                </div>  
+            </div>
+            </footer>
+</html>
+
+

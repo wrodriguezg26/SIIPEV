@@ -1,0 +1,183 @@
+/*
+    DEMO STYLE
+*/
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+
+
+
+.navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.header_subtitle
+{
+    background-color: #878787;
+    color:  #ffff;
+    border-radius: 10px;
+    width: 100%
+}
+
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+#sidebar {
+    min-width: 250px;
+    max-width: 285px;
+    background:#009fe3;
+    color: #fff;
+    transition: all 0.3s;
+    border-radius: 5px;
+}
+
+
+
+
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar  li  {
+    background-color: #003e65;
+    margin-bottom: 0.5rem;
+    margin-right: 1rem;  
+    color:  #ffff;
+    border-radius: 10px;
+    margin-left: 1.5rem;
+    padding-bottom: 0.3rem;
+    padding-top: 0.3rem;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+   
+    display: block;
+    color:  #ffff;
+   font-size: 15px;
+}
+
+
+
+#sidebar ul li a img {
+  width: 78px;
+  height: 78px;
+  margin-top: -50px;
+  margin-bottom: -24px;
+  margin-left: -41px;
+}
+
+
+#sidebar li:hover {
+    background-color: #878787;
+    color: white;
+}
+
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
+    content: '\e259';
+    display: block;
+    position: absolute;
+    right: 20px;
+    font-family: 'Glyphicons Halflings';
+    font-size: 0.6em;
+}
+a[aria-expanded="true"]::before {
+    content: '\e260';
+}
+
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background:  #009fe3;
+}
+ul ul li a  {
+   border-radius: 15px;
+}
+ul ul li a:hover  {
+   
+    background:  #003e65;
+ }
+
+
+.div_content
+{
+    color: #003e65;
+}
+
+
+.iframe_menu
+{
+    width: 100%;
+    height: 550px;
+}
+/* ---------------------------------------------------
+    footer STYLE
+----------------------------------------------------- */
+
+.footer{
+	
+}
+
+.footer_css a{color:#CCEFFA;}
+.footer_css a:hover{color:#FFF;text-decoration:underline;}
+.footer_css{
+	padding-left:0px;
+	padding-right:0px;	
+	background-color:#01AEE8;
+	color:#FFF;
+	font-size:13px;
+	margin-top:40px;
+}
+.footer_css .row{
+	margin-right: 0px;
+    margin-left: 0px;
+}
+.footer_css .imageSize_css img{
+	/*width:15%;*/
+	height:100px;
+	margin:10px;
+}
+.footer_css .logoAlcaldia_css{margin-top: 20px;}
+.footer_css .logoAlcaldia_css img{/*width:300px;margin: auto;vertical-align:middle;*/}
+.footerMedium_css{
+	background-color:#004F76;
+	color:#FFF;
+	/*width:100%;*/
+	display:block;
+	overflow:hidden
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+#content {
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
